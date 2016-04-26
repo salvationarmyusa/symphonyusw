@@ -1,0 +1,158 @@
+<header role="banner" class="globalHeader">
+  <div class="globalHeader-wrapper">
+
+    <a class="globalHeader-logoContainer" href="/symphonyusw/">
+      <img class="globalHeader-logo" src="{{ "/assets/images/global/shield-noLine.svg" | prepend: site.baseurl }}" /> 
+      <span class="globalHeader-tagline">Doing the Most Good&reg;</span>
+    </a>
+
+    <div class="globalHeader-navContainer">
+      <nav class="globalHeader-nav">
+        <ol class="nav">
+          <li class="navItem isShownOnMobile">
+            <a class="navItem-link" href="/symphonyusw/locations"><i class="fa fa-map-marker navItem-icon navItem-iconLocations"></i> Locations</a>
+          </li>
+          <li class="navItem">
+            <a class="navItem-link js-donateHeader" href="https://give.salvationarmyusa.org"><i class="fa fa-heart navItem-icon navItem-iconDonate"></i> Donate</a>
+          </li>
+          <li class="navItem">
+            <a class="navItem-link navItem-btn js-getHelp">Get Help</a>
+          </li>
+        </ol>
+      </nav>
+
+      <a class="globalHeader-menuTrigger js-toggleMenu">Menu <i class="fa fa-bars globalHeader-menuIcon"></i></a>
+    </div>
+
+  <div class="getHelp js-doesExpand">
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Montes aliquet velit enim. Scelerisque lectus eu nisi, dis elementum rhoncus in, turpis quis. Integer est. Tortor sit vel tincidunt, augue natoque magna dis. Scelerisque magna! Nisi, amet? </p>
+        <p><a href="#">Learn more about what we do</a></p>
+      </div>
+      <div class="getHelp-steps col-sm-7">
+        
+        <div data-step="1" class="getHelp-form">
+          <p class="getHelp-title">If this is an emergency, please call 911</p>
+
+          <div class="form-group">
+            <input type="text" id="firstName" class="getHelp-input" placeholder="First Name" value="Joe">
+            <div class="getHelp-zip">
+              <input type="text" id="zip" class="getHelp-input" placeholder="Zip" value="" pattern="\d*" maxlength="5" min="0">
+              <a class="getHelp-geolocate js-geolocate"><i class="fa fa-location-arrow"></i></a>
+            </div>
+
+            <a class="btn btn-red btn-solid js-stepForward">Next</a>
+            
+          </div>
+        </div>
+
+        <div data-step="2" class="getHelp-form">
+          <p>How can we help, <span class="firstName"></span>?</p>
+          <a class="js-stepBack getHelp-arrow"><i class="fa fa-angle-left"></i></a>
+          <ul class="getHelp-categories">
+                        <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+              <li><input type="checkbox" /> Lorem Ipsum</li>
+          </ul>
+          <div class="u-floatRight">
+            <a class="btn btn-red btn-solid js-stepForward">Next</a>
+            <p><a href="#">I need to talk to a friend.</a></p>
+          </div>
+        </div>
+
+        <div data-step="3" class="getHelp-results">
+          <a class="js-stepBack u-inlineBlock getHelp-arrow"><i class="fa fa-angle-left"></i></a>
+          Results go here.
+        </div>
+
+      </div>
+    </div>
+    <div class="row" style="display:none;">
+        <div class="col-xs-6 getHelp-categories">
+          <h2>Categories</h2>
+          <div class="name"></div>
+          <div class="results"></div>
+        </div>
+        <div class="col-xs-6 getHelp-centers">
+          <h2>Centers</h2>
+          <div class="centers"></div>
+        </div>
+      </div>
+    </div>
+    <div class="donateHeader js-doesExpand">
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-1">
+          <p><strong>Donate Goods</strong></p>
+          <form class="donateHeader-goods js-donateGoods" action="https://satruck.org/Donate/Choose" method="GET">
+            <div class="donateHeader-zip">
+              <input name="zip" type="text" id="zip" placeholder="Zip" class="donateHeader-zipInput" required value="" pattern="\d*" maxlength="5" min="0" />
+              <a class="donateHeader-geolocate js-geolocate"><i class="fa fa-location-arrow"></i></a>
+            </div>
+            <input type="submit" value="Go" class="donateHeader-zipSubmit" />
+          </form>
+          <p>Donate Clothing, Furniture &amp; Household Items</p>
+        </div>
+        <div class="col-sm-7 donateHeader-monetary">
+          
+          <p><strong>Give Now</strong></p>
+
+          <div class="donateHeader-amounts u-flexBox">
+
+            <a class="btn btn-red u-flexChild rowDonate-btn" href="https://give.salvationarmyusa.org/site/SPageNavigator/national_donation_form.html?amt=250">$250</a>
+            <a class="btn btn-red u-flexChild" href="https://give.salvationarmyusa.org/site/SPageNavigator/national_donation_form.html?amt=100">$100</a>
+            <a class="btn btn-red u-flexChild" href="https://give.salvationarmyusa.org/site/SPageNavigator/national_donation_form.html?amt=50">$50</a>
+            <a class="btn btn-red u-flexChild" href="https://give.salvationarmyusa.org/site/SPageNavigator/national_donation_form.html?amt=25">$25</a>
+            <a class="btn btn-red u-flexChild" href="https://give.salvationarmyusa.org/site/SPageNavigator/national_donation_form.html?amt=">Other</a>
+
+          </div>
+
+          <div class="u-flexBox">
+
+            <div class="donateHeader-recurring">
+              <label for="recurring">
+                <input type="checkbox" name="recurring" class="donateHeader-recurringCheckbox" />
+                I would like this to be a monthly donation.
+              </label>
+            </div>
+            <div class="donateHeader-submit">
+              <a class="btn btn-solid btn-red">Donate</a>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="flyoutContainer">
+  <ul class="flyoutNav">
+    {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <li class="flyoutNavItem"><a class="flyoutNavItem-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+  <a class="flyoutClose js-toggleMenu"><?xml version="1.0" encoding="utf-8"?>
+    <svg class="flyoutClose-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+    <path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4
+      L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1
+      c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1
+      c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/>
+    </svg>
+  </a>
+</div>

@@ -1,0 +1,139 @@
+<footer class="globalFooter" role="contentinfo">
+  <div class="globalFooter-wrapper">
+    <div class="globalFooter-section">
+      <div class="col-sm-10 col-sm-offset-1">
+
+        <div class="globalFooter-section">
+
+          <div class="col-sm-8 col-sm-offset-2">
+
+            <div class="missionStatement u-textCenter">
+              <p><strong>The Salvation Army Mission Statement</strong></p>
+              <p>The Salvation Army, an international movement, is an evangelical part of the universal Christian Church. Its message is based on the Bible. Its ministry is motivated by the love of God. Its mission is to preach the gospel of Jesus Christ and to meet human needs in His name without discrimination.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <hr />
+
+        <div class="globalFooter-section">
+          <div class="col-sm-8">
+            <ul class="globalFooter-nav">
+              {% for my_page in site.pages %}
+                {% if my_page.title %}
+                <li class="globalFooter-navItem"><a class="globalFooter-navLink" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+
+              <li class="globalFooter-navItem"><a class="globalFooter-navLink" href="https://www.facebook.com/SalvationArmyUSA"><i class="fa fa-facebook"></i> Facebook</a></li>
+              <li class="globalFooter-navItem"><a class="globalFooter-navLink" href="https://www.instagram.com/salvationarmyus/
+"><i class="fa fa-instagram"></i> Instagram</a></li>
+              <li class="globalFooter-navItem"><a class="globalFooter-navLink" href="https://www.youtube.com/user/SalvationArmyUSA"><i class="fa fa-youtube"></i> YouTube</a></li>
+
+              <li class="globalFooter-navItem"><a class="globalFooter-navLink" href="https://www.pinterest.com/salvationarmyus/"><i class="fa fa-pinterest"></i> Pinterest</a></li>
+              <li class="globalFooter-navItem"><a class="globalFooter-navLink" href="https://twitter.com/SalvationArmyUS"><i class="fa fa-twitter"></i> Twitter</a></li>
+              <li class="globalFooter-navItem"><a class="globalFooter-navLink" href="https://vimeo.com/savntv"><i class="fa fa-vimeo"></i> Vimeo</a></li>
+              
+              
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <div class="globalFooter-search">
+              <input class="globalFooter-input" type="text" placeholder="Site Search" required />
+              <input class="globalFooter-submit" type="submit" value="Search" />
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="globalFooter-section u-textCenter">
+
+          <p class="globalFooter-copyright">
+            The Salvation Army Western Territory Headquarters<br />
+            Serving communities in ALaska, Washington, Oregon, California, Arizona, New Mexico, Nevada, Idaho, Wyoming, Hawaii, Guam, Micronesia, and the Marshall Islands.<br />
+            180 E Ocean Blvd, Long Beach, CA  90802  | 1-800-SAL-ARMY | <a class="globalFooter-copyrightLink" href="/privacy-policy">Privacy Policy</a> | &copy; The Salvation Army Western Territory
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer> 
+</div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="{{ "/assets/scripts/main.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/handlebars/templates.js" | prepend: site.baseurl }}"></script>
+  <script>
+
+    $( document ).ready(function() {
+      $('.page-type input').each(function(){
+        var inputKey = $(this).attr('name');
+        if($(this).attr('id') == symphony._documentSettings[inputKey]) {
+          $(this).prop('checked',true);
+          $(this).trigger('click');
+        } else {
+          $(this).prop('checked',false);
+        }
+      });
+      
+      $('.page-type input').on('click', function(){
+        var inputKey = $(this).attr('name');
+        symphony._documentSettings[inputKey] = $(this).attr('id');
+        $('#customHeadContent').val(JSON.stringify(symphony._documentSettings));
+      });
+    });
+
+  </script>
+
+  <script type="text/javascript">
+  var utag_data = {
+    page_name : "", // Contains a user-friendly name for the page.
+    page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
+    page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
+    page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+    page_type : "", // Contains a user-friendly page type, e.g. 'cart page'.
+    customer_id : "", // Contains the customer's ID.
+    customer_username : "", // Contains the customer's username, e.g. johndoe38.
+    customer_status : "", // Contains the customer's status, e.g. 'logged in'.
+    customer_type : "", // Contains the customer's type, e.g. 'bronze member'.
+    customer_email : "", // Contains the customer's email.
+    customer_city : "", // Contains the city portion of the customer's address.
+    customer_state : "", // Contains the state portion of the customer's address.
+    customer_zip : "", // Contains the zip code portion of the customer's address.
+    customer_country : "", // Contains the country portion of the customer's address.
+    search_term : "", // Contains the search term or query submitted by a visitor.
+    search_results : "", // Contains the number of results returned with a search query.
+    search_type : "", // Contains the type of search conducted by the visitor.
+    site_region : "", // Contains values for the region or localized version, e.g. 'en_US'.
+    article_id : "", // Contains the article's ID.
+    article_name : "", // Contains the article's name.
+    article_author : "", // Contains the name of the author of an article.
+    article_publish_date : "", // Contains the publish date of an article.
+    video_id : "", // Contains the video ID.
+    video_name : "", // Contains the name of the video.
+    video_duration : "", // Contains the duration of the video. This value should be in seconds.
+    video_offset : "", // Contains the time into a video at which a certain state occurs.
+    video_state : "", // Contains the state of the video, e.g. start, play, pause, milestone, end.
+    video_player : "", // Contains the name of the video player.
+    video_player_version : "" // Contains the version of the video player.
+  }
+  </script>
+
+  <!-- Loading script asynchronously -->
+  <script type="text/javascript">
+      (function(a,b,c,d){
+      a='//tags.tiqcdn.com/utag/salvationarmy/sal-symphony/prod/utag.js';
+      b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+      })();
+  </script>
+
+
+
+</body>
+</html>
